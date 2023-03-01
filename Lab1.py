@@ -1,4 +1,4 @@
-import requests  # εισαγωγή της βιβλιοθήκης
+import requests
 
 
 def more(text):
@@ -12,8 +12,8 @@ def more(text):
                 break
 
 
-url = 'http://python.org/'  # προσδιορισμός του url
+url = 'http://python.org/'
 
-with requests.get(url) as response:  # το αντικείμενο response
+with requests.get(url) as response:
     html = response.text
     more(html)
