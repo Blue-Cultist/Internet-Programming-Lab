@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://python.org/'
+url = input("Enter URL\n")
 
 with requests.get(url) as response:
     headers = response.headers
